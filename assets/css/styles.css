@@ -227,11 +227,10 @@ img {
   margin-top: var(--mb-5);
   margin-bottom: var(--mb-1);
   font-size: 1.5rem;
-  filter: invert(38%) sepia(87%) saturate(4677%) hue-rotate(310deg) brightness(100%) contrast(30%);
 }
 
 .home-social-icon:hover{
-  filter: invert(38%) sepia(87%) saturate(4677%) hue-rotate(310deg) brightness(100%) contrast(78%);
+  filter: brightness(70%);
 }
 
 .home-img{
