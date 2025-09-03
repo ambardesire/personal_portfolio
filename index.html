@@ -12,15 +12,17 @@
         <header class="l-header">
             <nav class="nav b-grid">
                 <div>
-                    <a href="#" class="nav-logo">Ambar</a>
+                    <a href="#" class="nav-logo">
+                        <img src="assets/icons/heart-circle.png" class="skills-icon" height="32" width="32" />
+                    </a>
                 </div>
                 <div class="nav-menu" id="nav-menu">
                     <ul class="nav-list">
                         <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Experience</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                     </ul>
                 </div>
                 <div class="nav-toggle" id="nav-toggle">
@@ -33,20 +35,20 @@
 
             <section class="home bd-grid" id="home">
                 <div class="home-data">
-                    <h1 class="home-title">Hi,<br>I'm 
+                    <h1 class="home-title">Welcome,<br>I'm 
                         <span class="home-title-color">Ambar</span><br>
-                        and I am a developer
+                        and I'm a developer.
                     </h1>
-                    <a href="#" class="button">Contact</a>
+                    <a href="#contact" class="button">Get in touch -></a>
                 </div>
                 <div class="home-social">
-                    <a href="#" class="home-social-icon"> 
-                    <img src='assets/icons/linkedin.png' alt="linkedin" height='28' width='28' class="icon-color"/>
+                    <a href="https://linkedin.com/in/ambar-martell" class="home-social-icon" target="_blank"> 
+                        <img src='assets/icons/linkedin.png' alt="linkedin" height='28' width='28' class="icon-color"/>
                     </a>
-                    <a href="#" class="home-social-icon">
+                    <a href="https://github.com/ambardesire" class="home-social-icon" target="_blank">
                         <img src='assets/icons/github.png' alt="github" height='28' width='28' class="icon-color"/>
                     </a>
-                    <a href="#" class="home-social-icon">
+                    <a href="mailto:desif19@gmail.com" class="home-social-icon" target="_blank">
                         <img src='assets/icons/envelope.png' alt="mail" height='28' width='28' class="icon-color"/>
                     </a>                    
                 </div>
@@ -64,20 +66,26 @@
                         <img src="assets/images/self_full_pic.png" alt="">
                     </div>
                     <div>
-                        <h2 class="about-subtitle">I am Ambar</h2>
-                        <p class="about-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt repellendus ipsum libero fugiat debitis itaque distinctio cum voluptatibus! Accusamus deleniti enim consectetur reprehenderit quisquam quis rerum nam excepturi libero dolore?</p>
+                        <h2 class="about-subtitle">Hi!, I'm Ambar</h2>
+                        <p class="about-text"> 
+                            I'm a front-end developer with experience in developing web and mobile applications using TypeScript and
+                            React. Extensive experience in agile project management under the Scrum framework, leading
+                            multicultural teams, and collaborating effectively in bilingual environments. Proactive and self-taught,
+                            passionate about innovation and eager to adopt new technologies to drive organizational growth.
+                        </p>
                     </div>
                 </div>
             </section>
 
             <!--===== SKILLS =====-->
-            <section class="skills section">
+            <section class="skills section" id="skills">
                 <h2 class="section-title">Skills</h2>
+                <div class="skills-text-container">
+                    <p class="skills-text">Here are some of the technologies, tools, and programming languages I work with, but I am always exploring new solutions and refining my skills to build efficient, scalable, and user-friendly applications</p>
+                </div>
+
                 <div class="skills-container bd-grid">
                     <div>
-                        <h2 class="skills-subtitle">Professional Skills</h2>
-                        <p class="skills-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
                         <div class="skills-data">
                             <div class="skills-names first-skills-name">
                                 <img src="assets/icons/react.png" alt="" class="skills-icon" height='30' width='30'>
@@ -159,12 +167,103 @@
                         <img src="assets/images/skills.jpg" alt="" class="skills-img">
                     </div>
                 </div>
+                <div class="skills-text-container">
+                    <p class="skills-text">Beyond technical expertise, I bring strong interpersonal and organizational skills that help me thrive in collaborative environments. 
+                        I value effective leadership, clear and assertive communication, and a proactive mindset that allows me to adapt quickly to challenges.
+                        My commitment to continuous learning ensures that I am always growing both personally and professionally.
+                    </p>
+                </div>
             </section>
-            <!--===== EXPERIENCE =====-->
+            <!-- EXPERIENCE -->
+
+            <section class="experience section" id="experience">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-container bd-grid">
+                    <div class="experience-img">
+                        <img src="assets/images/experience.jpg" alt="">
+                    </div>
+                    <div class="experience-data">
+                        <!-- Front-End Developer -->
+                        <div>
+                            <h3 class="experience-subtitle">Front-End Developer</h3>
+                            <p>ATOMIC 32 • July 2021 – Present</p>
+                            <ul>
+                                <li class="experience-list-item">
+                                    <img src="assets/icons/star.png" alt="" class="experience-icon">
+                                    Designed and developed web and mobile applications with TypeScript and React.
+                                </li>
+                                <li class="experience-list-item">
+                                    <img src="assets/icons/star.png" alt="" class="experience-icon">
+                                    Implemented automated and manual testing to ensure product quality.
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <!-- Technical & Project Lead -->
+                        <div>
+                            <h3 class="experience-subtitle">Technical & Project Lead</h3>
+                            <p>ATOMIC 32 • June 2023 – Sept 2024</p>
+                            <ul>
+                                <li class="experience-list-item">
+                                    <img src="assets/icons/star.png" alt="" class="experience-icon">
+                                    Led agile projects under the Scrum framework, managing multicultural teams in Mexico and Brazil.
+                                </li>
+                                <li class="experience-list-item">
+                                    <img src="assets/icons/star.png" alt="" class="experience-icon">
+                                    Optimized resource allocation and team efficiency.
+                                </li>
+                                <li class="experience-list-item">
+                                    <img src="assets/icons/star.png" alt="" class="experience-icon">
+                                    Acted as liaison between US clients and Spanish-speaking development teams.
+                                </li>
+                                <li class="experience-list-item">
+                                    <img src="assets/icons/star.png" alt="" class="experience-icon">
+                                    Defined development strategies and solved complex problems.
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <!-- Front-End Intern -->
+                        <div>
+                            <h3 class="experience-subtitle">Front-End Intern</h3>
+                            <p>ATOMIC 32 • Jan 2021 – Jun 2021</p>
+                            <ul>
+                                <li class="experience-list-item">
+                                    <img src="assets/icons/star.png" alt="" class="experience-icon">
+                                    Contributed to development of web and mobile applications using React and TypeScript.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-container bd-grid">
+                    <form action="" class="contact-form">
+                        <input type="text" placeholder="Name" class="contact-input">
+                        <input type="text" placeholder="Email" class="contact-input">
+                        <textarea name="" id="" colos="0" rows="10" class="contact-input"></textarea>
 
-
+                        <input type="button" value="Send" class="contact-button button">
+                    </form>
+                </div>
+            </section>
         </main>
+        <footer class="footer">
+            <p class="footer-title">Ambar Desirée Martell Fuentes</p>
+            <div class="footer-social">
+                <img src="assets/icons/heart-circle.png" alt="" height='30' width='30' class="footer-icon">
+                <a href="https://www.instagram.com/ambardesif/" class="footer-icon" target="_blank">
+                    <img src="assets/icons/instagram.png" alt="" height='30' width='30'>
+                </a>
+                <img src="assets/icons/heart-circle.png" alt="" height='30' width='30' class="footer-icon">
+            </div>
+            <p>&#169; 2025 copyright all rights reserved</p>
+        </footer>
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="assets/src/main.js"></script>
     </body>
