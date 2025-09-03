@@ -265,6 +265,12 @@ img {
   background-color: var(--primary-light);
 }
 
+.button:disabled{
+  cursor: wait;
+  box-shadow: 0 10px 36px rgba(0,0,0,0.15);
+  background-color: var(--primary-light);
+}
+
 /*******about*******/
 
 .about-container{
@@ -415,10 +421,11 @@ img {
   background-color: var(--secondary-light);
   color: var(--light);
   text-align: center;
-  font-size: 1rem;
-  font-weight: var(--font-semi);
+  font-size: .8rem;
+  font-weight: var(--medium-font);
   padding: 1rem 0;
   box-shadow: 0 10px 36px rgba(0,0,0,0.15);
+  margin-top: var(--mb-6);
 }
 
 .footer-title{

@@ -64,6 +64,41 @@ sr.reveal('.experience-list-item', {interval: 200});
 sr.reveal('.contact-input', {interval: 200});
 
 
+//Submit form
+
+ const scriptURL = "https://script.google.com/macros/s/AKfycbym5BDPQMsoFnYOytraS630HUzAnpQeVTVXyWr_e0BVYsUxZLt5sUaP3fpy6P1TfEmsjw/exec";
+    const form = document.forms["submit-to-google-sheet"];
+    const submitButton = document.getElementById("submitButton");
+
+    form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    submitButton.disabled = true;
+
+    const formData = new URLSearchParams();
+    formData.append("name", document.getElementById("name").value);
+    formData.append("email", document.getElementById("email").value);
+    formData.append("message", document.getElementById("message").value);
+
+    fetch(scriptURL, {
+        method: "POST",
+        body: formData,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" }
+    })
+    .then((res) => {
+        res.json();
+    })
+    .then((data) => {
+        alert("✅ Tus datos han sido enviados correctamente. Me pondré en contacto contigo pronto.");
+        submitButton.disabled = false;
+        form.reset();
+    })
+    .catch((err) => {
+        console.error("Error!", err);
+        alert("❌ Ocurrió un problema al enviar los datos");
+        submitButton.disabled = false;
+    });
+    });
+
 
 
 
